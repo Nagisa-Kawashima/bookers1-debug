@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   # get 'students/index'
   # get 'students/show'
   # get 'students/edit'
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :items
   end
-  adminというフォルダは自身で作る必要がある
+  
 
 
   scope module: :school do
@@ -52,3 +53,6 @@ end
 
 # module（scope module）は
 # 「Controller#Action」のみカスタマイズしたい場合に使用します。
+
+
+# adminというフォルダは自身で作る必要があ
